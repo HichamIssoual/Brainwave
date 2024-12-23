@@ -1,8 +1,15 @@
-function App() {
+import ButtonGradient from "./assets/svg/ButtonGradient";
+import Header from "./components/Header";
 
+const App = () => {
   return (
-    <div className="text-3xl font-bold underline">hicham</div>
-  )
-}
+    <>
+      <div className="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
+        <Header />
+        <ButtonGradient />
+      </div>
+    </>
+  );
+};
 
-export default App
+export default App;
