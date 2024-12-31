@@ -12,7 +12,9 @@
   --font-grotesk: "Space Grotesk", sans-serif;
   color-scheme: dark;
 }
-
+.bgn-8-30 {
+  background: rgba(10, 9, 15, 0.418) !important;
+}
 .sign-in {
   background-image: url("./assets/benefits/card-2.svg");
   background-size: cover;
