@@ -9,7 +9,7 @@ import { useRef } from 'react';
 const Hero = () => {
   const parallaxRef = useRef(null);
   return (
-    <Section id={'Hero'} plusSvg={true}>
+    <Section id={'Hero'} plusSvg={true} className={'pb-96'}>
       <div
         className="flex justify-center items-center flex-col text-center gap-10 relative"
         ref={parallaxRef}
@@ -67,12 +67,14 @@ const Hero = () => {
             </div>
           </div>
           <Gradient />
+        </div>
+        <div className='z-2 translate-y-8'>
           <BackgroundCircles />
         </div>
         <div className="z-10">
           <p className="text-white body-1">Helping people create beautiful content at</p>
         </div>
-        <div className="z-10 flex justify-evenly items-center flex-wrap w-full">
+        <div className="z-10 translate-y-36 flex justify-evenly items-center gap-4 flex-wrap w-full">
           {companyLogos.map((yourlogo, index) => (
             <img src={yourlogo} alt="companyLogo" key={index} />
           ))}
@@ -81,7 +83,6 @@ const Hero = () => {
           <img src={heroBackground} alt="hero-bg" className="absolute -top-32 -right-10 z-1" />
         </div>
       </div>
-      <BottomLine />
     </Section>
   );
 };

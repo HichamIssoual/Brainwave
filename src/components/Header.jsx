@@ -15,7 +15,7 @@ const Header = () => {
         <nav
           className={`${
             openNav == true ? 'flex' : 'hidden'
-          } max-lg:flex-col max-lg:absolute max-lg:top-[77px] max-lg:w-full max-lg:text-center max-lg:right-0 lg:flex items-center justify-center text-n-3 text-sm bg-n-8 z-50`}
+          } max-lg:flex-col max-lg:absolute max-lg:top-[77px] max-lg:w-full max-lg:text-center max-lg:right-0 lg:flex items-center justify-center text-n-3 text-sm z-50 bg-n-8/90`}
         >
           {navigation.map((item) => {
             return (
